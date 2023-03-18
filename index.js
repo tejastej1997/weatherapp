@@ -22,7 +22,7 @@ let getinfo = () => {
         alert("Please enter the city name")
     }
     else {
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchbar.value}&APPID=${apikey}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchbar.value}&APPID=${apikey}`)
             .then((data) => {
                 return data.json()
             })
