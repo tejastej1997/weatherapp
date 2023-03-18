@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./weather.css">
+    <link rel="shortcut icon" href="./weathericon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Weather App</h1>
+        </div>
+        <div class="input-division">
+            <input type="search" name="" id="searchbar" class="form-control" placeholder="enter city name..." >
+            <button class="btn btn-outline-primary" id="search" onclick="getinfo()" data-bs-toggle="modal"
+                data-bs-target="">Get details</button>
+        </div>
+        <div class="info">
+            <img src="./cloudy.jpg" alt="" width="100%"  id="cloud" >
+            <img src="./rainbackground.jpeg" alt="" id="rain" >
+
+            <div class="temp">
+                <span id="tempvalue"></span>
+                <span id="unit">&#176</span>
+            </div>
+            <div id="weather-desc">
+
+            </div>
+            <div id="location">
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="login" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body text-center">
+                    <p>Please enter the valid city name</p>
+                </div>
+                <div class="modal-footer m-auto">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./weather.js"></script>
+</body>
+
+</html>
