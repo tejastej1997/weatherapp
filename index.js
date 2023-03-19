@@ -55,7 +55,7 @@ let getinfo = () => {
                         document.body.style.backgroundImage = "url('haze.jpeg')";
                         break;
                     case "MIST":
-                        document.body.style.backgroundImage = "url('mist.jpeg')";
+                        document.body.style.backgroundImage = "url('mist.jpg')";
                         break;
                     case "CLEAR":
                         document.body.style.backgroundImage = "url('clear.webp')";
