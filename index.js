@@ -15,8 +15,6 @@ const apikey = "528d8a2fd1b82953012a315d8230315d"
 
 let getinfo = () => {
 
-
-
     if (searchbar.value == "") {
         alert("Please enter the city name")
     }
@@ -98,6 +96,12 @@ let getinfo = () => {
     }
     searchbar.value = ""
 }
+
+searchbar.addEventListener('keyup',(e)=>{
+    if (e.key ==='Enter') {
+        getinfo()
+    }
+})
 
 
 
